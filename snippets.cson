@@ -1,0 +1,101 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+######################### Snippet Shortcut #####################################
+
+'.source.coffee':
+  'snippet block':
+    'prefix': 'snippet'
+    'body': """
+      \'$1\':
+        \'prefix\': \'$2\'
+        \'body\': \'$3\'
+        """
+
+############################ Javascript ########################################
+
+'.source.js':
+  # Angular snippets
+  'ng1-app':
+    'prefix': 'ng1-app'
+    'body': 'angular.module(\'$1\', [\'ui.router\']);'
+  'ng1-ctrl':
+    'prefix': 'ng1-ctrl'
+    'body': """
+      angular.module(\'$1\').controller(\'$2\', function($scope) {
+        $3
+      })
+      """
+  'ng1-srvc':
+    'prefix': 'ng1-srvc'
+    'body': """
+      angular.module(\'$1\').service(\'$2\', function($3) {
+        $4
+      })
+      """
+
+############################### HTML ###########################################
+
+'.text.html.basic':
+  # CDN snippets
+  'cdn-ng1':
+    'prefix': 'cdn-ng1'
+    'body': '<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>'
+  'cdn-uirouter':
+    'prefix': 'cdn-uirouter'
+    'body': '<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>'
+  'cdn-uigrid-js':
+    'prefix': 'cdn-uigrid-js'
+    'body': '<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/3.2.9/ui-grid.js"></script>'
+  'cdn-uigrid-css':
+    'prefix': 'cdn-uigrid-css'
+    'body': '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/3.2.9/ui-grid.css">'
+  'cdn-react':
+    'prefix': 'cdn-react'
+    'body': '<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react.js"></script>'
+  'cdn-normalize':
+    'prefix': 'cdn-normalize'
+    'body': '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">'
+  'cdn-fontawesome':
+    'prefix': 'cdn-fa'
+    'body': '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">'
+  'cdn-riot':
+    'prefix': 'cdn-riot'
+    'body': '<script src="https://cdn.jsdelivr.net/riot/2.6/riot+compiler.min.js"></script>'
+  'cdn-jquery':
+    'prefix': 'cdn-jquery'
+    'body': '<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>'
+  'cdn-moment':
+    'prefix': 'cdn-moment'
+    'body': '<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.js"></script>'
+  'cdn-snap':
+    'prefix': 'cdn-snap'
+    'body': '<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg.js"></script>'
+  'cdn-animate':
+    'prefix': 'cdn-animate'
+    'body': '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">'
+  'cdn-lettering':
+    'prefix': 'cdn-lettering'
+    'body': '<script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.js"></script>'
+  'cnd-textillate':
+    'prefix': 'cdn-textillate'
+    'body': '<script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.js"></script>'
